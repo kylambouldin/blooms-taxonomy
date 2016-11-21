@@ -1,2 +1,2 @@
-# express-passport-local
-Template for user registration and login using expressJS, passport-local, and mongoDB
+# blooms-taxonomy
+2015 Summer reaserach project at UNCC studying self-reflection through bloom's taxonomy
