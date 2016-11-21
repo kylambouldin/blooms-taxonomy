@@ -1,0 +1,70 @@
+extends ../includes/layout
+
+block content
+	div.container
+		h1.activityName=activity
+	
+		div.matrix
+			div.grid
+				div.row
+					div.col-sm-1(style="background-color:white; border:0px;")
+					div.col-sm-1(style="background-color:white; border:0px;")
+					div#cog_header.col-sm-1(style="background-color:lavender;") Cognitive Processes
+				// end row
+				div.row
+					div.col-sm-1(style="background-color:white; border:0px;")
+					div.col-sm-1(style="background-color:white; border:0px;")
+					div.col-sm-1(style="background-color:lavender;") Remember
+					div.col-sm-1(style="background-color:lavender;") Understand
+					div.col-sm-1(style="background-color:lavender;") Apply
+					div.col-sm-1(style="background-color:lavender;") Analyze
+					div.col-sm-1(style="background-color:lavender;") Evaluate
+					div.col-sm-1(style="background-color:lavender;") Create
+				// end row
+			// end grid
+			div.grid#selection
+				div.row
+					div.col-sm-1(style="background-color:lavender; border-bottom:0px")
+					div.col-sm-1(style="background-color:lavender;") Factual
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+				// end row
+				div.row
+					div.col-sm-1(style="background-color:lavender; border-bottom:0px; border-top:0px; line-height: 100px;") Levels of
+					div.col-sm-1(style="background-color:lavender;") Conceptual
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+				// end row
+				div.row
+					div.col-sm-1(style="background-color:lavender; border-bottom:0px; border-top:0px; line-height: 0px;") Knowledge
+					div.col-sm-1(style="background-color:lavender;") Procedural
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+				// end row
+				div.row
+					div.col-sm-1(style="background-color:lavender; border-top:0px;")
+					div.col-sm-1(style="background-color:lavender;") Metacognitive
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+				// end row
+			// end grid
+	// end container
+	
+	script(src='/javascripts/userResults.js')
+	link(rel='stylesheet', href='/stylesheets/grid.css')

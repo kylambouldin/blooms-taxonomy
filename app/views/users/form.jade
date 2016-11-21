@@ -1,0 +1,78 @@
+extends ../includes/layout
+
+block content
+	div.container
+		h1.activityName=activity
+		p.activityDescription
+	
+		div.matrix
+			div.grid
+				div.row
+					div.col-sm-1(style="background-color:white; border:0px;")
+					div.col-sm-1(style="background-color:white; border:0px;")
+					div#cog_header.col-sm-1(style="background-color:lavender;") Cognitive Processes
+				// end row
+				div.row
+					div.col-sm-1(style="background-color:white; border:0px;")
+					div.col-sm-1(style="background-color:white; border:0px;")
+					div.col-sm-1(style="background-color:lavender;", title="Retrieving relevant knowledge from long-term memory.") Remember
+					div.col-sm-1(style="background-color:lavender;", title="Determining the meaning of instructional messages, including oral, written, and graphic communication.") Understand
+					div.col-sm-1(style="background-color:lavender;", title="Carrying out or using a procedure in a given situation.") Apply
+					div.col-sm-1(style="background-color:lavender;", title="Breaking material into its constituent parts and detecting how the parts relate to one another and to an overall structure or purpose.") Analyze
+					div.col-sm-1(style="background-color:lavender;", title="Making judgments based on criteria and standards.") Evaluate
+					div.col-sm-1(style="background-color:lavender;", title="Putting elements together to form a novel, coherent whole or make an original product.") Create
+				// end row
+			// end grid
+			div.grid#selection
+				div.row
+					div.col-sm-1(style="background-color:lavender; border-bottom:0px")
+					div.col-sm-1(style="background-color:lavender;", title="The basic elements students must know to be acquainted with a discipline or solve problems in it") Factual
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+				// end row
+				div.row
+					div.col-sm-1(style="background-color:lavender; border-bottom:0px; border-top:0px; line-height: 100px;") Levels of
+					div.col-sm-1(style="background-color:lavender;", title="The interrelationships among the basic elements within a larger structure that enable them to function together") Conceptual
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+				// end row
+				div.row
+					div.col-sm-1(style="background-color:lavender; border-bottom:0px; border-top:0px; line-height: 0px;") Knowledge
+					div.col-sm-1(style="background-color:lavender;", title="How to do something, methods of inquiry, and criteria for using skills, algorithms, techniques, and methods") Procedural
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+				// end row
+				div.row
+					div.col-sm-1(style="background-color:lavender; border-top:0px;")
+					div.col-sm-1(style="background-color:lavender;", title="Knowledge of cognition in general as well as awareness and knowledge of one’s own cognition") Metacognitive
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+					div.col-sm-1.choice.lavender
+				// end row
+			// end grid
+	// end container
+
+	#wrapper
+		form.form-inline(style="padding-top:30px; float:right")
+			div.form-group
+				button.btn.btn-default#btnSubmit(type='submit') Submit
+				button.btn.btn-default#btnCancel(type='reset') Cancel	
+	// end wrapper 
+	
+	script(src='/javascripts/matrixAnimation.js')
+	link(rel='stylesheet', href='/stylesheets/grid.css')

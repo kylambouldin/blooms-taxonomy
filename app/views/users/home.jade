@@ -1,0 +1,11 @@
+extends ../includes/layout
+
+block content
+	div.container.student
+		div.col-sm-6.col-md-4.col-md-offset-4
+			#user
+				h1.text-center.login-title Welcome Student #{user.username}
+			div.activitiesTable
+
+	script(src='/javascripts/activitiesList.js')
+	link(rel='stylesheet', href='stylesheets/activitiesStyle.css')

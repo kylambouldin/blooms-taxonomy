@@ -1,0 +1,23 @@
+extends ./includes/layout
+
+block content
+	div.container
+		div.row
+			div.col-sm-6.col-md-4.col-md-offset-4
+				h1.text-center.login-title Please Signup!
+					div.signup-wall
+						form(class='form-signin', action='/signup', method='POST')
+							input(type='text', name='username', class='form-control', placeholder='Username',required, autofocus)
+							input(type='password', name='password', class='form-control nomargin', placeholder='Password', required)
+							.radio
+								input(type='radio', name='userType', class='form-control nomargin', value="student", checked="")
+								|Student
+							.radio
+								input(type='radio', name='userType', class='form-control nomargin', value="teacher")
+								|Teacher
+							button(class='btn btn-lg btn-primary btn-block', type='submit')
+								|Register
+							span.clearfix
+					#message
+						if message
+							h1.text-center.error-message #{message}

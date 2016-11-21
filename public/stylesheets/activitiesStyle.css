@@ -1,0 +1,29 @@
+.wrapper {
+	text-align: center;
+}
+
+.form {
+	display: inline-block;
+}
+
+
+#btn_logout {
+	margin: 0 auto;
+}
+
+.activitiesList {
+}
+
+.activitiesList ul {
+	list-style-type: none;
+}
+
+.activitiesList ul li {
+	border: 1px solid black;
+	padding: 20px;
+	width: 300px;
+}
+
+ul li a {
+	text-decoration: none;
+}

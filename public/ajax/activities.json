@@ -1,0 +1,11 @@
+[
+    {"title":"Homework1", "description":"Define variable and explain how it is used in a program"},
+    {"title":"Worksheet1", "description":"Choose the correct syntax to complete the program"},
+    {"title":"Peer1", "description":"With a partner discuss the definitions you have learned already"},
+    {"title":"Homework5", "description":"Write out what the method does in plain words"},
+    {"title":"Worksheet5", "description":"Write a for loop to print out 1 - 10"},
+    {"title":"Peer5", "description":"With a partner trace through the program and discuss the strategy you used"},
+    {"title":"Homework10", "description":"Compare efficiencies of two programs"},
+    {"title":"Worksheet10", "description":"State what the for loop is used for in the overall program"},
+    {"title":"Peer10", "description":"With a partner develop a tutorial on a topic for future CS students"}
+]

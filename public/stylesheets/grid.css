@@ -1,0 +1,46 @@
+html {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+}
+
+.matrix {
+	user-select: none;
+}
+
+.row {
+  text-align: center;
+  line-height: 70px;
+}
+
+#cog_header {
+	/* width: 6 x col-width */
+	width: 660px;
+}
+
+.col-sm-1 {
+  height: 70px;
+  width: 110px;
+  border: 1px solid black;
+  padding: 0;
+}
+
+.container {
+	margin: 0px auto;
+	/* width: 8 x col-width */
+	width: 880px;
+}
+
+.lavender {
+	background-color: lavender;
+}
+
+.red {
+	background-color: red;
+}
+
+.highlight {
+	background-color: orange;
+}
